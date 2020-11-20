@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="register/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="register/index.css">
+
+    <div id="redirect" class="|redirect|"></div>
+
+    <!--|/  FONTS  \|-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Recursive' rel='stylesheet'>
+    <!--|/  END FONTS  \|-->
+</head>
+
+<body onload="onload()">
+
+    <iframe id="iframe"></iframe>
+    <div id="iframeShade"></div>
+
+    <b class="register">Register</b>
+
+    <div class="inputType email">
+        <p>EMAIL</p>
+    </div>
+    <div class="inputType username">
+        <p>USERNAME</p>
+    </div>
+    <div class="inputType password">
+        <p>PASSWORD</p>
+    </div>
+
+    <div id="passwordShow" onclick="showPassword()"></div>
+
+    <a href="/login" class="login" id="login">Heb je al een account?</a>
+
+    <p id="response"></p>
+
+    <div id="border">
+        <input type="email" title="Email" id="email"></input>
+        <input type="text" title="Username" id="username"></input>
+        <input type="password" title="Password" id="password"></input>
+    </div>
+
+    <div class="loginWrapper">
+        <div id="normalLogin" class="loginButton" onclick="register()">Register</div>
+        <p class="loginBetween">of</p>
+        <div id="discordLogin" class="loginButton" onclick="window.open('/login/discord', '_self')">
+            <div></div>
+            Login with Discord
+        </div>
+    </div>
+
+</body>
+
+</html>

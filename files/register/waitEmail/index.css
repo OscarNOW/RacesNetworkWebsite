@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+#iframe {
+
+    margin: 0;
+    border: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    pointer-events: none;
+    user-select: none;
+    
+    z-index: 0;
+
+}
+
+#iframeShade {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.76)
+
+}
+
+#border {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 40vw;
+    height: 60vh;
+
+    border-radius: 40px;
+
+    z-index: 9;
+
+    border: 2px solid black;
+    background-color: white;
+
+}
+
+#border > div {
+
+    display: flex;
+    justify-content: space-around;
+
+    width: 40vw;
+    margin-top: 3vh;
+
+}
+
+.verification {font-size: 4vmax;}
+
+.text {
+    width: 30vw;
+    font-size: 2vmax;
+}

@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+}
+
+#border {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 40vw;
+    height: 60vh;
+
+    border-radius: 40px;
+
+    z-index: 9;
+
+    border: 2px solid black;
+    background-color: white;
+}
+
+input {
+    
+    position: relative;
+
+    width: 20vw;
+    height: 4vh;
+
+    font-family: 'Roboto';
+    font-size: 1vmax;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#email {top: 17vh;}
+#username {top: 22vh;}
+#password {top: 27vh;}
+
+.inputType {
+
+    width: fit-content;
+    height: fit-content;
+
+    position: fixed;
+
+    z-index: 10;
+
+    font-family: 'Recursive';
+    font-size: 1vmax;
+
+    transform: translate(-50%, -50%);
+
+}
+
+.email {
+    left: calc(50% - 10vw + 1.2vw);
+    top: calc(50% - 30vh + 17vh - 1vh);
+}
+
+.username {
+    left: calc(50% - 10vw + 2.3vw);
+    top: calc(50% - 30vh + 32vh - 6.6vh);
+}
+
+.password {
+    left: calc(50% - 10vw + 2.3vw);
+    top: calc(50% - 30vh + 35vh);
+}
+
+#response {
+
+    position: fixed;
+
+    left: calc(50%);
+    top: calc(50% + 16vh);
+
+    z-index: 10;
+    transform: translate(-50%, -50%);
+
+    width: fit-content;
+    height: fit-content;
+
+    font-family: 'Recursive';
+    font-size: 1vmax;
+    color: red;
+}
+
+.register {
+
+    position: fixed;
+
+    z-index: 10;
+
+    left: calc(50%);
+    top: calc(50% - 22vh);
+    transform: translate(-50%, -50%);
+
+    font-family: 'Recursive';
+    font-size: 5vmax;
+}
+
+.login {
+
+    position: fixed;
+
+    left: calc(50%);
+    top: calc(50% + 24vh);
+    transform: translate(-50%, -50%);
+
+    font-family: 'Recursive';
+    font-size: 2vmax;
+
+    z-index: 100;
+
+    color: rgb(0, 176, 244);
+    width: fit-content;
+    height: fit-content;
+
+}
+
+#passwordShow {
+
+    position: fixed;
+
+    cursor: pointer;
+    z-index: 100;
+
+    top: 56.5vh;
+    left: calc(50% + 11.5vw);
+    transform: translateX(-50%);
+
+    width: 2vmax;
+    height: 2vmax;
+
+    background-image: url('../pics/Eye.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom; 
+}
+
+#iframe {
+
+    margin: 0;
+    border: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    pointer-events: none;
+    user-select: none;
+    
+    z-index: 0;
+
+}
+
+#iframeShade {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.76)
+
+}
+
+.loginButton {
+
+    font-family: 'Recursive';
+    font-size: 1vmax;
+
+    border-radius: 5px;
+    padding: 0.2vmax;
+    color: white;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#normalLogin {
+    background-color: rgb(133, 133, 133);
+}
+
+#discordLogin {
+    background-color: #7289DA;
+}
+
+#discordLogin > div {
+    background-image: url('../pics/Discord-Logo-White.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom; 
+    
+    width: 1.4vmax;
+    height: 1.4vmax;
+
+    margin: 0;
+    padding: 0;
+
+    display: inline-block;
+}
+
+.loginBetween {
+    font-family: 'Recursive';
+    font-size: 0.8vmax;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.loginWrapper {
+
+    position: fixed;
+    width: 17vw;
+    height: fit-content;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 10;
+    top: 62vh;
+
+    display: flex;
+    justify-content: space-between;
+
+}

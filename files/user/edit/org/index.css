@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.both {
+    position: fixed;
+
+    left: var(--x);
+    top: var(--y);
+
+    width: var(--width);
+    height: var(--height);
+
+    display: inline-block;
+
+}
+
+.element {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.overlay:hover {
+    border: 1px solid rgb(66, 133, 244);
+}
+
+.background {
+    position: fixed;
+
+    left: 0;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: -10;
+}
+
+#mouse {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 99999999999999;
+
+    cursor: grabbing;
+    pointer-events: none;
+}
+
+.triangle {
+    
+    position: relative;
+    top: -2vmax;
+
+    width: 0; 
+    height: 0; 
+    border-top: 2vmax solid transparent;
+    border-bottom: 2vmax solid transparent; 
+  
+    border-right: 3vmax solid rgb(26, 26, 26); 
+}
+
+#toolTip {
+    display: inline-block;
+    position: fixed;
+}
+
+.toolBox {
+
+    position: relative;
+    top: calc(-6vmax - (15vh / 2) + (3vmax / 2) + 0.8vh);
+    left: 3vmax;
+
+    width: 2vw;
+    height: 15vh;
+    background-color: rgb(26, 26, 26); 
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.toolBox > div {
+
+    width: fit-content;
+    height: 15vh;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+.toolBox p {
+    margin: 0;
+
+    font-family: 'Roboto Mono';
+    font-size: 2vmax;
+    color: white;
+
+    cursor: pointer;
+}

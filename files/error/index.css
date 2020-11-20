@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'HACKED';
+    src: url('/fonts/glitched/HACKED.eot');
+    src: url('/fonts/glitched/HACKED.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/glitched/HACKED.woff') format('woff'),
+        url('/fonts/glitched/HACKED.svg#HACKED') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.errorCode {
+    font-family: 'HACKED';
+    font-size: 30vmax;
+    margin: 0;
+
+    user-select: none;
+    pointer-events: none;
+
+    width: fit-content;
+    display: inline-block;
+}
+
+body > div {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+body > div > div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    height: 100vh;
+    width: fit-content;
+}
+
+.wrapper > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.wrapper > div > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrapper > div > div > p {
+    margin: 0;
+    display: inline-block;
+
+    font-family: 'Roboto';
+    font-size: 3vmax;
+}
+
+#errorFileWrapper > p {
+    color: rgba(0, 0, 0, 0.267);
+    font-size: 2vmax;
+}

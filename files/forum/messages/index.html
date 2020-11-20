@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berichten</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="messages/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="messages/index.css">
+
+    <!--|/  FONTS  \|-->
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono" rel="stylesheet">
+    <!--|/  END FONTS  \|-->
+
+    <div id="defaultFilter" class="|filter|"></div>
+
+</head>
+
+<body onload="onload()" id="body">
+
+    <div class="toolBar">
+        <div class="forumButton">
+            <a onclick="window.parent.open('/forum', '_self')">Forum</a>
+        </div>
+        <div class="Filter">
+            <div class="filterWrapper">
+                <p>Filter:</p>
+            </div>
+            <div class="filterRest">
+                <div id="dropdown-button">
+                    <p id="dropdownP"></p>
+                </div>
+                <div id="dropdown-content">
+                    <div id="dropdown1" onclick="dropdownClick(1)">
+                        <p id="dropdownP1">Unban</p>
+                    </div>
+                    <div id="dropdown2" onclick="dropdownClick(2)">
+                        <p id="dropdownP2">Unmute</p>
+                    </div>
+                    <div id="dropdown3" onclick="dropdownClick(3)">
+                        <p id="dropdownP3">Unwarn</p>
+                    </div>
+                    <div id="dropdown4" onclick="dropdownClick(4)" style="display: none;">
+                        <p id="dropdownP4">Geen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="messageCenter">
+        <div id="messageContainer"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="forum/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="forum/index.css">
+
+    <!--|/  FONTS  \|-->
+    <link href='https://fonts.googleapis.com/css?family=Recursive' rel='stylesheet'>
+    <!--|/  END FONTS  \|-->
+
+</head>
+
+<body onload="onload()">
+
+    <div class="border header">
+        <div>
+            <div><a href="/">Home</a></div>
+            <div id="messageOverview" style="display: none;"><a href="forum/messages">Berichten</a></div>
+            <div><a href="forum/post" id="post">Post</a></div>
+            <div id="accountButton" style="display: none;" onclick="accountPage()"><a href="#">Account</a></div>
+            <div id="logOut" style="display: none;"><a href="#" onclick="log.logout()">Log uit</a></div>
+        </div>
+    </div>
+    <div class="border forumLogo">
+        <div>
+            <div>
+                <p>RacesNetwork forum</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div>
+            <a href="forum/messages?filter=unban" id="messageOverviewUnban" style="display: none;">Unbans</a>
+            <a href="forum/messages?filter=unmute" id="messageOverviewUnmute" style="display: none;">Unmutes</a>
+            <a href="forum/messages?filter=unwarn" id="messageOverviewUnwarn" style="display: none;">Unwarns</a>
+        </div>
+    </div>
+
+    <div>
+        <a id="messageIconLink">
+            <div class="messageIcon" id="messageIcon"></div>
+        </a>
+        <div class="message">
+            |message|
+        </div>
+    </div>
+
+</body>
+
+</html>

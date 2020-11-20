@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+}
+
+.messageUserIcon {
+
+    --size: 3vmax;
+
+    position: relative;
+    top: calc(-1vh - (var(--size) / 2));
+    left: calc(-1vw - (var(--size) / 2));
+
+    width: var(--size);
+    height: var(--size);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+
+    background-color: white;
+    border-radius: 50%;
+
+    margin-bottom: calc(var(--size) * -1);
+}
+
+.messageAttributeContainer {
+    position: relative;
+    top: -3.25vh;
+    left: 1.5vw;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: fit-content;
+    height: fit-content;
+}
+
+.messageDate {
+
+    /*position: relative;
+    top: -3.25vh;
+    left: 1.5vw;
+    */
+
+    margin-left: 1vw;
+    margin-bottom: -3vh;
+
+    height: 3vh;
+    width: fit-content;
+
+    background-color: white;
+    border: 4px solid black;
+    border-radius: 6px;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+
+.messageDate > p {
+    font-size: 1vmax;
+    font-family: 'Alata';
+}
+
+.messageType {
+
+    margin-bottom: -3vh;
+
+    height: 3vh;
+    width: fit-content;
+
+    border: 4px solid rgb(255, 149, 0);;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+
+    background-color: rgb(255, 149, 0);
+}
+
+.messageType > p {
+    font-size: 1vmax;
+    font-family: 'Alata';
+}
+
+#messageContainer {
+    width: fit-content;
+    height: fit-content;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    margin-top: 15vh;
+    margin-left: 5vw;
+
+}
+
+.line {
+    text-decoration: line-through;
+}
+.background {
+    background-color: rgb(229, 229, 229);
+}
+.message p {
+    margin: 0;
+    display: initial;
+}
+
+.message a {
+    text-decoration: underline;
+    color: rgb(0, 176, 244);
+    pointer-events: none;
+}
+.message div {
+    margin: 0;
+    width: fit-content;
+    display: initial;
+}
+.message {
+    font-family: 'Recursive';
+    font-size: 2vmax;
+    margin: 0;
+    margin-top: 3vh;
+
+    overflow-x: hidden;
+
+    width: 18vw;
+    height: 18vh;
+
+    position: relative;
+    top: -2vh;
+}
+#messageContainer > div {
+    border: 4px solid black;
+    border-radius: 6px;
+
+    padding-top: 1vh;
+    padding-left: 1vw;
+    padding-bottom: 1vh;
+    padding-right: 1vw;
+
+    width: 20vw;
+    height: 20vh;
+
+    margin-right: 3vw;
+    margin-bottom: 3vh;
+
+    cursor: pointer;
+
+}
+
+.toolBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 7vh;
+
+    background-color: rgb(65, 65, 65);
+
+    z-index: 100000;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.messageCenter {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-around;
+
+    overflow: hidden;
+}
+
+#dropdown-button {
+    width: 9vw;
+    height: 5vh;
+    border: 1px solid rgb(104, 104, 104);
+    background-color: rgb(170, 170, 170);
+}
+
+#dropdown-button:hover {
+    background-color: rgb(133, 133, 133);
+}
+
+#dropdown-content {
+    justify-content: flex-start;
+    flex-direction: column;
+    display: none;
+}
+
+#dropdown-content > div {
+    width: 9vw;
+    height: 5vh;
+
+    cursor: pointer;
+    background-color: rgb(170, 170, 170);
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.Filter > div p {
+    text-align: center;
+
+    font-family: 'Roboto Mono';
+    font-size: 2vmax;
+
+    margin: 0;
+}
+
+#dropdown-content > div:hover {
+    background-color: rgb(133, 133, 133);
+}
+
+.filterRest {
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    width: fit-content;
+    margin: 0;
+}
+
+.Filter > div > p {
+    display: inline-block;
+    margin: 0;
+
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.filterWrapper {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+    height: 7vh;
+    width: fit-content;
+}
+
+.Filter {
+    height: 7vh;
+    width: fit-content;
+
+    justify-self: flex-end;
+}
+
+.forumButton a {
+    font-family: 'Recursive', sans-serif;
+    font-size: 3vmax;
+
+    cursor: pointer;
+    user-select: none;
+
+    color: white;
+    margin: 0;
+    text-decoration: none;
+}
+
+.forumButton {
+    height: 7vh;
+    width: fit-content;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}

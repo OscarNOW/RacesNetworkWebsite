@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/code snippets/LoginManager.js"></script>
+    <script src="post/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="post/index.css">
+
+    <!--|/  FONTS  \|-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+    <!--|/  END FONTS  \|-->
+
+</head>
+
+<body onload="onload()">
+
+    <button id="post" onclick="post()">Post</button>
+
+    <div id="tagg">
+        <p>Tagg:</p>
+        <div>
+            <div id="dropdown-button"></div>
+            <div id="dropdown-content">
+                <div id="dropdown1" onclick="dropdownClick(1)">Unban</div>
+                <div id="dropdown2" onclick="dropdownClick(2)">Unmute</div>
+                <div id="dropdown3" onclick="dropdownClick(3)">Unwarn</div>
+                <div id="dropdown4" onclick="dropdownClick(4)">Melding</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="border">
+        <textarea id="text" maxlength="1000"></textarea>
+    </div>
+    <span id="count"></span>
+
+    <div id="allowReactions" style="display: none;">
+        <input type="checkbox" checked id="allowReactionsCheckbox"></input>
+        <p>Reacties toestaan</p>
+    </div>
+
+
+    <div id="toolTip" style="display: none;">
+        <div class="triangle"></div>
+        <div class="box" id="box">
+            <b onclick="toolTip('b')" title="Bold" class="toolTipSelection">B</b>
+            <b onclick="toolTip('i')" title="Italic" class="toolTipSelection">I</b>
+            <b onclick="toolTip('s')" title="Stripe" class="toolTipSelection">S</b>
+            <b onclick="toolTip('l')" title="Link" class="toolTipSelection">L</b>
+            <b onclick="toolTip('c')" title="Color" class="toolTipSelection">C</b>
+            <div display="none" id="url">
+                <input type="text" id="urlText" autocorrect="off" autocapitalize="off" spellcheck="false"></input>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

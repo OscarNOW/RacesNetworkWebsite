@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background-color: rgb(179, 179, 179);
+}
+
+body:before, body:after {
+    content: "";
+    position: fixed;
+    background: rgb(27, 27, 27);
+    left: 0;
+    right: 0;
+    height: 20px;
+}
+body:before {
+    top: 0;
+}
+body:after {
+    bottom: 0;
+}
+
+.picture {
+
+    border: 4px dotted black;
+    border-radius: 25px;
+
+    background-image: url(../pics/DerpendeEevee.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+
+    position: fixed;
+
+    margin-top: 5vh;
+    margin-left: 2vw;
+
+    width: 20vw;
+    height: 20vh;
+}
+
+.realName {
+    position: fixed;
+    
+    margin-left: 35vw;
+    margin-top: 3vh;
+
+    font-size: 20vmin;
+}
+
+.info {
+    position: fixed;
+
+    margin-top: 26vh;
+    margin-left: 2vw;
+
+    font-size: 3vmin;
+
+    padding: 1vmin;
+
+}
+
+.text {
+    position: fixed;
+
+    width: 47vw;
+    height: 43vh;
+
+    margin-left: 35vw;
+    margin-top: 30vh;
+
+    border-radius: 4px;
+
+    padding-left: 3vw;
+    padding-top: 2vh;
+
+    border: 2px solid black;
+}
